@@ -1,0 +1,244 @@
+/* تحسينات تجربة المستخدم على الأجهزة المحمولة */
+
+/* تحسينات عامة للأجهزة المحمولة */
+@media (max-width: 767px) {
+    /* تحسين حجم الخط للقراءة على الشاشات الصغيرة */
+    body {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* تحسين المسافات بين العناصر */
+    .ps-container {
+        padding: 0 10px;
+    }
+
+    /* تحسين أحجام العناوين */
+    h1 {
+        font-size: 28px !important;
+    }
+
+    h2 {
+        font-size: 24px !important;
+    }
+
+    h3 {
+        font-size: 20px !important;
+    }
+
+    /* تحسين الأزرار لتكون أسهل للنقر */
+    .ps-btn, 
+    button.ps-btn,
+    .add-to-cart-button {
+        padding: 12px 20px;
+        font-size: 16px;
+        min-height: 44px; /* الحد الأدنى الموصى به لعناصر اللمس */
+    }
+
+    /* تحسين المسافة بين عناصر القائمة */
+    .menu > li {
+        margin-bottom: 10px;
+    }
+
+    /* تحسين عرض الصور */
+    .ps-product__thumbnail img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* تحسين عرض المنتجات في الشبكة */
+    .ps-product {
+        margin-bottom: 20px;
+    }
+
+    /* تحسين شكل السلة */
+    .ps-cart__content {
+        width: 300px;
+        right: -30px;
+    }
+
+    /* تحسين شكل القائمة المنسدلة */
+    .ps-dropdown__content {
+        width: 100%;
+        left: 0;
+    }
+}
+
+/* تحسينات خاصة للهواتف الصغيرة */
+@media (max-width: 480px) {
+    /* تحسين عرض المنتجات ليكون عمود واحد */
+    .ps-shopping .row .col-6 {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* تحسين عرض صفحة المنتج */
+    .ps-product--detail .ps-product__thumbnail {
+        margin-bottom: 20px;
+    }
+
+    /* تحسين عرض التقييمات */
+    .ps-product--detail .ps-product__rating {
+        display: block;
+    }
+
+    /* تحسين عرض الأزرار في صفحة المنتج */
+    .ps-product--detail .ps-product__shopping {
+        flex-direction: column;
+    }
+
+    .ps-product--detail .ps-product__shopping > * {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    /* تحسين عرض جدول السلة */
+    .ps-table--shopping-cart {
+        font-size: 14px;
+    }
+
+    .ps-table--shopping-cart thead {
+        display: none;
+    }
+
+    .ps-table--shopping-cart tbody tr {
+        display: block;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #e1e1e1;
+        padding-bottom: 20px;
+    }
+
+    .ps-table--shopping-cart tbody td {
+        display: block;
+        width: 100%;
+        text-align: right;
+        padding: 5px 0;
+        border: none;
+    }
+
+    .ps-table--shopping-cart tbody td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: 600;
+    }
+}
+
+/* تحسينات للأجهزة اللوحية */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* تحسين عرض المنتجات في الشبكة */
+    .ps-shopping .row .col-md-4 {
+        width: 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* تحسين عرض القائمة الجانبية */
+    .ps-layout__left {
+        width: 30%;
+    }
+
+    .ps-layout__right {
+        width: 70%;
+    }
+}
+
+/* تحسينات لتجربة اللمس */
+@media (max-width: 991px) {
+    /* زيادة المسافة بين عناصر القائمة لسهولة النقر */
+    .menu > li > a {
+        padding: 15px 10px;
+    }
+
+    /* تحسين أزرار الكمية */
+    .form-group--number button {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* تحسين حقول النموذج */
+    .form-control {
+        height: 44px;
+        font-size: 16px; /* منع تكبير iOS التلقائي */
+    }
+
+    /* تحسين أزرار الإرسال */
+    button[type="submit"] {
+        min-height: 44px;
+    }
+
+    /* تحسين عناصر التحديد */
+    select.form-control {
+        height: 44px;
+    }
+
+    /* تحسين عرض الفلاتر */
+    .ps-filter__header {
+        padding: 15px;
+    }
+
+    /* تحسين زر العودة للأعلى */
+    #back2top {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* تحسينات لسرعة التحميل على الأجهزة المحمولة */
+@media (max-width: 767px) {
+    /* تقليل حجم الصور على الأجهزة المحمولة */
+    .ps-banner__image img,
+    .ps-product__thumbnail img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* تبسيط التذييل على الأجهزة المحمولة */
+    .ps-footer__widgets {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* تحسين عرض النشرة الإخبارية */
+    .ps-newsletter {
+        padding: 30px 15px;
+    }
+
+    /* تحسين عرض الشرائح */
+    .ps-carousel {
+        margin: 0 -5px;
+    }
+
+    .ps-carousel .slick-slide {
+        padding: 0 5px;
+    }
+}
+
+/* تحسينات لتجربة المستخدم العربية على الأجهزة المحمولة */
+@media (max-width: 767px) {
+    [dir="rtl"] .ps-product__title {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    [dir="rtl"] .ps-product__price {
+        font-size: 18px;
+    }
+
+    [dir="rtl"] .ps-product__desc {
+        font-size: 14px;
+    }
+
+    /* تحسين عرض الفئات على الأجهزة المحمولة */
+    [dir="rtl"] .ps-shop-categories {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    /* تحسين عرض القائمة المنسدلة للفئات */
+    [dir="rtl"] .ps-dropdown--category .ps-dropdown__content {
+        width: 100%;
+        left: 0;
+    }
+}

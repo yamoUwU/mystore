@@ -1,0 +1,825 @@
+/* تصحيحات الاتجاه من اليمين إلى اليسار (RTL) */
+
+/* تصحيحات عامة للاتجاه */
+html[dir="rtl"] body {
+    text-align: right;
+}
+
+/* تصحيح اتجاه القوائم */
+html[dir="rtl"] .menu > li {
+    float: right;
+}
+
+html[dir="rtl"] .menu > li > a {
+    padding-right: 15px;
+    padding-left: 30px;
+}
+
+html[dir="rtl"] .menu > li > a:after {
+    left: 15px;
+    right: auto;
+}
+
+html[dir="rtl"] .menu > li .sub-menu {
+    left: auto;
+    right: 0;
+}
+
+/* تصحيح اتجاه الشريط العلوي */
+html[dir="rtl"] .header__extra {
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+html[dir="rtl"] .header__extra span {
+    right: auto;
+    left: -6px;
+}
+
+html[dir="rtl"] .header__actions {
+    float: left;
+}
+
+/* تصحيح اتجاه البحث */
+html[dir="rtl"] .ps-form--quick-search .form-control {
+    padding-right: 20px;
+    padding-left: 60px;
+}
+
+html[dir="rtl"] .ps-form--quick-search button {
+    left: 0;
+    right: auto;
+}
+
+/* تصحيح اتجاه السلة */
+html[dir="rtl"] .ps-cart__content {
+    right: auto;
+    left: 0;
+}
+
+html[dir="rtl"] .ps-cart__items {
+    padding: 20px;
+}
+
+html[dir="rtl"] .ps-cart__items .ps-product--cart-mobile {
+    text-align: right;
+}
+
+/* تصحيح اتجاه المنتجات */
+html[dir="rtl"] .ps-product__thumbnail {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+html[dir="rtl"] .ps-product__content {
+    text-align: right;
+}
+
+html[dir="rtl"] .ps-product__rating {
+    float: right;
+}
+
+html[dir="rtl"] .ps-product__price {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الفلاتر */
+html[dir="rtl"] .ps-layout__left {
+    padding-right: 0;
+    padding-left: 30px;
+}
+
+html[dir="rtl"] .ps-list--categories li {
+    padding-right: 0;
+    padding-left: 20px;
+}
+
+html[dir="rtl"] .ps-list--categories li .sub-toggle {
+    left: 0;
+    right: auto;
+}
+
+/* تصحيح اتجاه التذييل */
+html[dir="rtl"] .ps-footer__widgets {
+    text-align: right;
+}
+
+html[dir="rtl"] .ps-footer__links {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الأزرار */
+html[dir="rtl"] .ps-btn--favorite i {
+    right: 50%;
+    left: auto;
+    transform: translate(50%, -50%);
+}
+
+html[dir="rtl"] .form-group--number button.up {
+    left: 0;
+    right: auto;
+}
+
+html[dir="rtl"] .form-group--number button.down {
+    left: 0;
+    right: auto;
+    top: 50%;
+}
+
+/* تصحيح اتجاه صفحة المنتج */
+html[dir="rtl"] .ps-product--detail .ps-product__info {
+    text-align: right;
+    padding-right: 30px;
+    padding-left: 0;
+}
+
+html[dir="rtl"] .ps-product--detail .ps-product__meta p {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+html[dir="rtl"] .ps-product--detail .ps-product__desc {
+    text-align: right;
+}
+
+html[dir="rtl"] .ps-product--detail .ps-product__shopping {
+    text-align: right;
+}
+
+/* تصحيح اتجاه صفحة السلة */
+html[dir="rtl"] .ps-section--shopping .ps-section__header {
+    text-align: right;
+}
+
+html[dir="rtl"] .ps-table--shopping-cart tbody td {
+    text-align: right;
+}
+
+html[dir="rtl"] .ps-table--shopping-cart tbody td:last-child {
+    text-align: left;
+}
+
+/* تصحيح اتجاه صفحة الدفع */
+html[dir="rtl"] .ps-checkout__form {
+    text-align: right;
+}
+
+html[dir="rtl"] .ps-form__billing label {
+    text-align: right;
+}
+
+html[dir="rtl"] .ps-block--payment-method {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الإشعارات */
+html[dir="rtl"] .ps-toast {
+    right: auto;
+    left: 20px;
+}
+
+/* تصحيح اتجاه المودال */
+html[dir="rtl"] .modal-header .close {
+    left: 20px;
+    right: auto;
+}
+
+html[dir="rtl"] .modal-body {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الفورم */
+html[dir="rtl"] .form-group label {
+    text-align: right;
+}
+
+html[dir="rtl"] .form-control {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الأيقونات */
+html[dir="rtl"] .ps-list--social li {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+html[dir="rtl"] .ps-list--social li:last-child {
+    margin-left: 0;
+}
+
+/* تصحيح اتجاه الشرائح */
+html[dir="rtl"] .slick-slider {
+    direction: ltr;
+}
+
+html[dir="rtl"] .slick-slider .slick-slide {
+    direction: rtl;
+}
+
+/* تصحيح اتجاه الصفحة الرئيسية */
+html[dir="rtl"] .ps-banner__content {
+    text-align: right;
+}
+
+html[dir="rtl"] .ps-section__header h3 {
+    text-align: right;
+}
+
+html[dir="rtl"] .ps-section__header h3:after {
+    right: 0;
+    left: auto;
+}
+
+/* تصحيح اتجاه لوحة التحكم */
+html[dir="rtl"] .ps-my-account {
+    text-align: right;
+}
+
+html[dir="rtl"] .ps-my-account-side {
+    float: right;
+}
+
+html[dir="rtl"] .ps-my-account-content {
+    float: left;
+}
+
+/* تصحيح اتجاه الخطوط */
+html[dir="rtl"] h1, 
+html[dir="rtl"] h2, 
+html[dir="rtl"] h3, 
+html[dir="rtl"] h4, 
+html[dir="rtl"] h5, 
+html[dir="rtl"] h6, 
+html[dir="rtl"] p, 
+html[dir="rtl"] span, 
+html[dir="rtl"] a, 
+html[dir="rtl"] button, 
+html[dir="rtl"] input, 
+html[dir="rtl"] select, 
+html[dir="rtl"] textarea {
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* تصحيح اتجاه الأرقام */
+html[dir="rtl"] .ps-product__price,
+html[dir="rtl"] .ps-product__price span,
+html[dir="rtl"] .ps-product__price del,
+html[dir="rtl"] .price,
+html[dir="rtl"] .price span,
+html[dir="rtl"] .price del {
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* تصحيح اتجاه الفئات */
+html[dir="rtl"] .ps-shop-categories {
+    text-align: right;
+}
+
+/* تصحيح اتجاه المقارنة */
+html[dir="rtl"] .ps-compare {
+    text-align: right;
+}
+
+/* تصحيح اتجاه المفضلة */
+html[dir="rtl"] .ps-wishlist {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الحساب */
+html[dir="rtl"] .ps-account {
+    text-align: right;
+}
+
+/* تصحيح اتجاه التسجيل */
+html[dir="rtl"] .ps-form--account {
+    text-align: right;
+}
+
+/* تصحيح اتجاه تسجيل الدخول */
+html[dir="rtl"] .ps-form--login {
+    text-align: right;
+}
+
+/* تصحيح اتجاه التعليقات */
+html[dir="rtl"] .ps-review {
+    text-align: right;
+}
+
+/* تصحيح اتجاه التقييمات */
+html[dir="rtl"] .ps-block--average-rating {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الأسعار */
+html[dir="rtl"] .ps-block--price-history {
+    text-align: right;
+}
+
+/* تصحيح اتجاه المواصفات */
+html[dir="rtl"] .ps-block--specification {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الوصف */
+html[dir="rtl"] .ps-product__content {
+    text-align: right;
+}
+
+/* تصحيح اتجاه التبويبات */
+html[dir="rtl"] .ps-tab-list {
+    text-align: right;
+}
+
+html[dir="rtl"] .ps-tab-list li {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+html[dir="rtl"] .ps-tab-list li:last-child {
+    margin-left: 0;
+}
+
+/* تصحيح اتجاه الفرز */
+html[dir="rtl"] .ps-sort {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الصفحات */
+html[dir="rtl"] .ps-pagination {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الفلاتر المتقدمة */
+html[dir="rtl"] .ps-filter {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الشريط الجانبي */
+html[dir="rtl"] .ps-sidebar {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الأقسام */
+html[dir="rtl"] .ps-section {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الأزرار المتقدمة */
+html[dir="rtl"] .ps-btn--outline {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الأزرار المستديرة */
+html[dir="rtl"] .ps-btn--rounded {
+    text-align: center;
+}
+
+/* تصحيح اتجاه الأزرار المنحنية */
+html[dir="rtl"] .ps-btn--curve {
+    text-align: center;
+}
+
+/* تصحيح اتجاه الأزرار الكاملة */
+html[dir="rtl"] .ps-btn--fullwidth {
+    text-align: center;
+}
+
+/* تصحيح اتجاه الأزرار الصغيرة */
+html[dir="rtl"] .ps-btn--sm {
+    text-align: center;
+}
+
+/* تصحيح اتجاه الأزرار الكبيرة */
+html[dir="rtl"] .ps-btn--lg {
+    text-align: center;
+}
+
+/* تصحيح اتجاه الأزرار الكبيرة جداً */
+html[dir="rtl"] .ps-btn--xl {
+    text-align: center;
+}
+
+/* تصحيح اتجاه الأزرار العكسية */
+html[dir="rtl"] .ps-btn--reverse {
+    text-align: center;
+}
+
+/* تصحيح اتجاه الأزرار الرمادية */
+html[dir="rtl"] .ps-btn--gray {
+    text-align: center;
+}
+
+/* تصحيح اتجاه الأزرار السوداء */
+html[dir="rtl"] .ps-btn--black {
+    text-align: center;
+}
+
+/* تصحيح اتجاه الأزرار المفضلة */
+html[dir="rtl"] .ps-btn--favorite {
+    text-align: center;
+}
+
+/* تصحيح اتجاه الأزرار الإغلاق */
+html[dir="rtl"] .ps-btn--close {
+    text-align: center;
+}
+
+/* تصحيح اتجاه زر العودة للأعلى */
+html[dir="rtl"] #back2top {
+    left: 30px;
+    right: auto;
+}
+
+/* تصحيح اتجاه حقول الإدخال */
+html[dir="rtl"] .ps-input--has-icon > i {
+    left: 15px;
+    right: auto;
+}
+
+/* تصحيح اتجاه القوائم المنسدلة */
+html[dir="rtl"] .ps-dropdown__content {
+    left: auto;
+    right: 0;
+}
+
+/* تصحيح اتجاه الشيكبوكس */
+html[dir="rtl"] .ps-checkbox label {
+    padding-right: 30px;
+    padding-left: 0;
+}
+
+html[dir="rtl"] .ps-checkbox label:before {
+    right: 0;
+    left: auto;
+}
+
+html[dir="rtl"] .ps-checkbox label:after {
+    right: 7px;
+    left: auto;
+}
+
+/* تصحيح اتجاه الراديو */
+html[dir="rtl"] .ps-radio label {
+    padding-right: 30px;
+    padding-left: 0;
+}
+
+html[dir="rtl"] .ps-radio label:before {
+    right: 0;
+    left: auto;
+}
+
+html[dir="rtl"] .ps-radio label:after {
+    right: 5px;
+    left: auto;
+}
+
+/* تصحيح اتجاه الألوان */
+html[dir="rtl"] .ps-checkbox--color {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+html[dir="rtl"] .ps-checkbox--color:last-child {
+    margin-left: 0;
+}
+
+/* تصحيح اتجاه القوائم */
+html[dir="rtl"] .ps-list--dot li {
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+html[dir="rtl"] .ps-list--dot li:before {
+    right: 0;
+    left: auto;
+}
+
+html[dir="rtl"] .ps-list--plus li a {
+    padding-right: 15px;
+    padding-left: 0;
+}
+
+html[dir="rtl"] .ps-list--plus li a:before {
+    right: 0;
+    left: auto;
+}
+
+html[dir="rtl"] .ps-list--link li a:before {
+    right: 0;
+    left: auto;
+}
+
+html[dir="rtl"] .ps-list--categories li .sub-menu {
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+html[dir="rtl"] .ps-list--arrow a {
+    padding-right: 15px;
+    padding-left: 0;
+}
+
+html[dir="rtl"] .ps-list--arrow a:before {
+    right: 0;
+    left: auto;
+}
+
+/* تصحيح اتجاه الجداول */
+html[dir="rtl"] .ps-table th,
+html[dir="rtl"] .ps-table td {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الفواتير */
+html[dir="rtl"] .ps-invoice {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الإشعارات */
+html[dir="rtl"] .ps-notification {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الرسائل */
+html[dir="rtl"] .ps-message {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الأسئلة الشائعة */
+html[dir="rtl"] .ps-faq {
+    text-align: right;
+}
+
+/* تصحيح اتجاه المدونة */
+html[dir="rtl"] .ps-post {
+    text-align: right;
+}
+
+/* تصحيح اتجاه التعليقات */
+html[dir="rtl"] .ps-comment {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الاتصال */
+html[dir="rtl"] .ps-contact {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الخريطة */
+html[dir="rtl"] .ps-map {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الصفحات الثابتة */
+html[dir="rtl"] .ps-page {
+    text-align: right;
+}
+
+/* تصحيح اتجاه صفحة الخطأ */
+html[dir="rtl"] .ps-404 {
+    text-align: center;
+}
+
+/* تصحيح اتجاه صفحة الصيانة */
+html[dir="rtl"] .ps-maintenance {
+    text-align: center;
+}
+
+/* تصحيح اتجاه صفحة قريباً */
+html[dir="rtl"] .ps-coming-soon {
+    text-align: center;
+}
+
+/* تصحيح اتجاه الفوتر */
+html[dir="rtl"] .ps-footer {
+    text-align: right;
+}
+
+/* تصحيح اتجاه حقوق النشر */
+html[dir="rtl"] .ps-copyright {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الروابط السريعة */
+html[dir="rtl"] .ps-quick-links {
+    text-align: right;
+}
+
+/* تصحيح اتجاه النشرة الإخبارية */
+html[dir="rtl"] .ps-newsletter {
+    text-align: right;
+}
+
+/* تصحيح اتجاه وسائل التواصل الاجتماعي */
+html[dir="rtl"] .ps-social {
+    text-align: right;
+}
+
+/* تصحيح اتجاه طرق الدفع */
+html[dir="rtl"] .ps-payment-methods {
+    text-align: right;
+}
+
+/* تصحيح اتجاه اللغات */
+html[dir="rtl"] .ps-languages {
+    text-align: right;
+}
+
+/* تصحيح اتجاه العملات */
+html[dir="rtl"] .ps-currencies {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الهيدر */
+html[dir="rtl"] .ps-header {
+    text-align: right;
+}
+
+/* تصحيح اتجاه الشعار */
+html[dir="rtl"] .ps-logo {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة الرئيسية */
+html[dir="rtl"] .ps-main-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة الفرعية */
+html[dir="rtl"] .ps-sub-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة الجانبية */
+html[dir="rtl"] .ps-side-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة العلوية */
+html[dir="rtl"] .ps-top-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة السفلية */
+html[dir="rtl"] .ps-bottom-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة المتنقلة */
+html[dir="rtl"] .ps-mobile-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة المنسدلة */
+html[dir="rtl"] .ps-dropdown-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة الميجا */
+html[dir="rtl"] .ps-mega-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة الثابتة */
+html[dir="rtl"] .ps-fixed-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة العائمة */
+html[dir="rtl"] .ps-floating-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة المخفية */
+html[dir="rtl"] .ps-hidden-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة المرئية */
+html[dir="rtl"] .ps-visible-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة المغلقة */
+html[dir="rtl"] .ps-closed-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة المفتوحة */
+html[dir="rtl"] .ps-open-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة النشطة */
+html[dir="rtl"] .ps-active-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة غير النشطة */
+html[dir="rtl"] .ps-inactive-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة المعطلة */
+html[dir="rtl"] .ps-disabled-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة الممكنة */
+html[dir="rtl"] .ps-enabled-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة المحددة */
+html[dir="rtl"] .ps-selected-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة غير المحددة */
+html[dir="rtl"] .ps-unselected-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة المميزة */
+html[dir="rtl"] .ps-featured-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة غير المميزة */
+html[dir="rtl"] .ps-unfeatured-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة المؤقتة */
+html[dir="rtl"] .ps-temporary-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة الدائمة */
+html[dir="rtl"] .ps-permanent-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة المخصصة */
+html[dir="rtl"] .ps-custom-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة الافتراضية */
+html[dir="rtl"] .ps-default-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة الأساسية */
+html[dir="rtl"] .ps-primary-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة الثانوية */
+html[dir="rtl"] .ps-secondary-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة الثالثة */
+html[dir="rtl"] .ps-tertiary-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة الرابعة */
+html[dir="rtl"] .ps-quaternary-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة الخامسة */
+html[dir="rtl"] .ps-quinary-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة السادسة */
+html[dir="rtl"] .ps-senary-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة السابعة */
+html[dir="rtl"] .ps-septenary-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة الثامنة */
+html[dir="rtl"] .ps-octonary-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة التاسعة */
+html[dir="rtl"] .ps-nonary-menu {
+    float: right;
+}
+
+/* تصحيح اتجاه القائمة العاشرة */
+html[dir="rtl"] .ps-denary-menu {
+    float: right;
+}

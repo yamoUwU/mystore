@@ -1,0 +1,176 @@
+/* تحسينات الألوان والخطوط للذوق العربي */
+:root {
+    --color-1st: #00a69c; /* لون أساسي أخضر فيروزي أكثر جاذبية للذوق العربي */
+    --primary-color: #00a69c;
+    --color-2nd: #2d3e50; /* لون ثانوي داكن أزرق مائل للرمادي */
+    --secondary-color: #2d3e50;
+    --primary-font: 'Tajawal', sans-serif; /* خط عربي أنيق */
+    --button-text-color: #ffffff;
+    --header-text-color: #2d3e50;
+    --header-button-background-color: #00a69c;
+    --header-button-text-color: #ffffff;
+    --header-text-hover-color: #00a69c;
+    --header-text-accent-color: #00a69c;
+}
+
+/* تحسين اتجاه النص للغة العربية */
+[dir="rtl"] {
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* تحسين أحجام الخطوط */
+[dir="rtl"] h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+[dir="rtl"] h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+[dir="rtl"] h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+[dir="rtl"] p, [dir="rtl"] span, [dir="rtl"] a {
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* تحسين الأزرار */
+[dir="rtl"] .ps-btn, 
+[dir="rtl"] button.ps-btn {
+    background-color: var(--color-1st);
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 5px;
+    font-family: 'Tajawal', sans-serif;
+}
+
+[dir="rtl"] .ps-btn:hover, 
+[dir="rtl"] button.ps-btn:hover {
+    background-color: var(--color-2nd);
+    color: #ffffff;
+}
+
+/* تحسين القوائم */
+[dir="rtl"] .menu > li > a {
+    font-weight: 600;
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* تحسين العناصر في السلة */
+[dir="rtl"] .ps-cart__content {
+    text-align: right;
+}
+
+/* تحسين صفحة المنتج */
+[dir="rtl"] .ps-product__title {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    color: var(--color-2nd);
+}
+
+[dir="rtl"] .ps-product__price {
+    color: var(--color-1st);
+    font-weight: 700;
+}
+
+/* تحسين تذييل الصفحة */
+[dir="rtl"] .ps-footer {
+    background-color: #f8f8f8;
+}
+
+[dir="rtl"] .ps-footer__title {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    color: var(--color-2nd);
+}
+
+/* تحسين الشريط العلوي */
+[dir="rtl"] .header__top {
+    background-color: var(--color-2nd);
+}
+
+[dir="rtl"] .header__top .ps-list--social li a {
+    color: #ffffff;
+}
+
+/* تحسين شريط التنقل */
+[dir="rtl"] .navigation {
+    background-color: #ffffff;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* تحسين أيقونات الموقع */
+[dir="rtl"] .ps-list--social li a:hover {
+    color: var(--color-1st);
+}
+
+/* تحسين صفحة المنتجات */
+[dir="rtl"] .ps-block--shop-features {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* تحسين أقسام الصفحة الرئيسية */
+[dir="rtl"] .ps-section__title {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    color: var(--color-2nd);
+}
+
+/* تحسين عرض المنتجات */
+[dir="rtl"] .ps-product {
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+[dir="rtl"] .ps-product:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* تحسين أزرار الشراء */
+[dir="rtl"] .add-to-cart-button {
+    background-color: var(--color-1st);
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+[dir="rtl"] .add-to-cart-button:hover {
+    background-color: var(--color-2nd);
+}
+
+/* تحسين صفحة السلة */
+[dir="rtl"] .ps-section--shopping {
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* تحسين عملية الدفع */
+[dir="rtl"] .ps-checkout {
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* تحسين صفحة الحساب */
+[dir="rtl"] .ps-my-account {
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* تحسين الألوان للعناصر المهمة */
+[dir="rtl"] .header__extra span {
+    background-color: var(--color-1st);
+}
+
+/* تحسين عرض الأسعار */
+[dir="rtl"] .ps-product__price.sale {
+    color: #e74c3c;
+}
+
+/* تحسين عرض التقييمات */
+[dir="rtl"] .br-theme-fontawesome-stars .br-widget a.br-active:after,
+[dir="rtl"] .br-theme-fontawesome-stars .br-widget a.br-selected:after {
+    color: #f39c12;
+}

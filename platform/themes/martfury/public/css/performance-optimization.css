@@ -1,0 +1,271 @@
+/* تحسينات أداء وسرعة الموقع */
+
+/* تحسين عرض الصور أثناء التحميل */
+img[data-lazy-src] {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+img[data-lazy-src][src] {
+    opacity: 1;
+}
+
+/* مؤشر التحميل */
+.ps-loading-indicator {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* تحسين أداء التحولات */
+.ps-product,
+.ps-product__thumbnail,
+.ps-product__content,
+.ps-btn,
+.menu > li > a,
+.ps-banner {
+    will-change: transform;
+}
+
+/* تحسين أداء التمرير */
+html {
+    scroll-behavior: smooth;
+}
+
+/* تحسين عرض العناصر أثناء التحميل */
+.ps-product {
+    min-height: 300px;
+    position: relative;
+}
+
+/* تحسين أداء الشرائح */
+.ps-carousel .slick-slide:not(.slick-active) {
+    visibility: hidden;
+}
+
+.ps-carousel .slick-slide.slick-active {
+    visibility: visible;
+}
+
+/* تحسين أداء القوائم المنسدلة */
+.menu > li > .sub-menu {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* تحسين أداء التحولات في الأزرار */
+.ps-btn,
+button.ps-btn {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* تحسين أداء الصور المتحركة */
+.ps-banner__image {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* تحسين أداء الشريط العلوي الثابت */
+.header--sticky .header__top {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* تحسين أداء السلة */
+.ps-cart__content {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* تحسين أداء البحث */
+.ps-form--quick-search {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* تحسين أداء التذييل */
+.ps-footer {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* تحسين أداء الصفحات */
+.ps-page--shop,
+.ps-page--product,
+.ps-page--cart,
+.ps-page--checkout {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* تحسين أداء الفلاتر */
+.ps-filter {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* تحسين أداء الأزرار العائمة */
+#back2top {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* تحسين أداء النوافذ المنبثقة */
+.ps-popup {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* تحسين أداء الإشعارات */
+.ps-toast {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* تحسين أداء الشرائح */
+.ps-carousel {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* تحسين أداء الصور */
+.ps-product__thumbnail img {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* تحسين أداء الأيقونات */
+.fa, .fas, .far, .fal, .fab {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* تحسين أداء الخطوط */
+body, h1, h2, h3, h4, h5, h6, p, a, span, button {
+    text-rendering: optimizeSpeed;
+}
+
+/* تحسين أداء الظلال */
+.ps-product:hover,
+.ps-btn:hover,
+.ps-banner:hover {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* تحسين أداء التحولات في الألوان */
+a, button, .ps-btn {
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+}
+
+/* تحسين أداء التحولات في الحجم */
+.ps-product__thumbnail img {
+    transition: transform 0.3s;
+}
+
+/* تحسين أداء التحولات في الموضع */
+.ps-product:hover {
+    transition: transform 0.3s;
+}
+
+/* تحسين أداء التحولات في الشفافية */
+.ps-product__badge {
+    transition: opacity 0.3s;
+}
+
+/* تحسين أداء التحولات في الظل */
+.ps-product:hover {
+    transition: box-shadow 0.3s;
+}
+
+/* تحسين أداء التحولات في الحدود */
+.ps-btn {
+    transition: border-color 0.3s;
+}
+
+/* تحسين أداء التحولات في الخلفية */
+.ps-btn {
+    transition: background-color 0.3s;
+}
+
+/* تحسين أداء التحولات في النص */
+.ps-product__title {
+    transition: color 0.3s;
+}
+
+/* تحسين أداء التحولات في الزر */
+.ps-btn {
+    transition: all 0.3s;
+}
+
+/* تحسين أداء التحولات في القائمة */
+.menu > li > a {
+    transition: color 0.3s;
+}
+
+/* تحسين أداء التحولات في السلة */
+.ps-cart__toggle span {
+    transition: transform 0.3s;
+}
+
+/* تحسين أداء التحولات في البحث */
+.ps-form--quick-search .form-control {
+    transition: border-color 0.3s;
+}
+
+/* تحسين أداء التحولات في التذييل */
+.ps-footer__links a {
+    transition: color 0.3s;
+}
+
+/* تحسين أداء التحولات في الصفحات */
+.ps-page--shop .ps-product {
+    transition: transform 0.3s;
+}
+
+/* تحسين أداء التحولات في الفلاتر */
+.ps-filter__header {
+    transition: background-color 0.3s;
+}
+
+/* تحسين أداء التحولات في الأزرار العائمة */
+#back2top {
+    transition: background-color 0.3s;
+}
+
+/* تحسين أداء التحولات في النوافذ المنبثقة */
+.ps-popup {
+    transition: opacity 0.3s;
+}
+
+/* تحسين أداء التحولات في الإشعارات */
+.ps-toast {
+    transition: transform 0.3s;
+}
+
+/* تحسين أداء التحولات في الشرائح */
+.ps-carousel .slick-slide {
+    transition: opacity 0.3s;
+}
+
+/* تحسين أداء التحولات في الصور */
+.ps-product__thumbnail img:hover {
+    transition: transform 0.3s;
+}
+
+/* تحسين أداء التحولات في الأيقونات */
+.fa:hover, .fas:hover, .far:hover, .fal:hover, .fab:hover {
+    transition: color 0.3s;
+}
+
+/* تحسين أداء التحولات في الخطوط */
+body, h1, h2, h3, h4, h5, h6, p, a, span, button {
+    transition: color 0.3s;
+}
+
+/* تحسين أداء التحولات في الظلال */
+.ps-product:hover {
+    transition: box-shadow 0.3s;
+}

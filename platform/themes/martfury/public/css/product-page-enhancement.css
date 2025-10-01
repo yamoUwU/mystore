@@ -1,0 +1,522 @@
+/* تحسينات تصميم صفحة المنتج */
+
+/* تحسين عرض صفحة المنتج بشكل عام */
+.ps-page--product {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+/* تحسين عرض صور المنتج */
+.ps-product--detail .ps-product__thumbnail {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* تحسين عرض معرض الصور */
+.ps-product__gallery {
+    margin-top: 15px;
+}
+
+.ps-product__gallery img {
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.ps-product__gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* تحسين عنوان المنتج */
+.ps-product--detail .ps-product__title {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-2nd);
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* تحسين عرض العلامة التجارية */
+.ps-product--detail .ps-product__meta p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.ps-product--detail .ps-product__meta p a {
+    color: var(--color-1st);
+    font-weight: 600;
+}
+
+/* تحسين عرض التقييمات */
+.ps-product--detail .rating_wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.ps-product--detail .rating {
+    margin-right: 10px;
+}
+
+.ps-product--detail .product_rate {
+    height: 16px;
+    background-color: #f39c12;
+}
+
+.ps-product--detail .rating_num {
+    font-size: 14px;
+    color: #666;
+}
+
+/* تحسين عرض السعر */
+.ps-product--detail .ps-product__price {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-1st);
+    margin-bottom: 15px;
+}
+
+.ps-product--detail .ps-product__price.sale span {
+    color: var(--color-1st);
+}
+
+.ps-product--detail .ps-product__price.sale del {
+    font-size: 20px;
+    color: #999;
+    font-weight: 400;
+}
+
+/* تحسين عرض وصف المنتج */
+.ps-product--detail .ps-product__desc {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.ps-product--detail .ps-list--dot li {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* تحسين عرض العروض الخاصة */
+.ps-product--detail .ps-product__countdown {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.ps-product--detail .ps-product__countdown figure {
+    margin-bottom: 15px;
+}
+
+.ps-product--detail .ps-product__countdown figcaption {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-2nd);
+    margin-bottom: 10px;
+}
+
+.ps-product--detail .ps-countdown {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.ps-product--detail .ps-countdown li {
+    background-color: var(--color-2nd);
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-align: center;
+    min-width: 60px;
+}
+
+.ps-product--detail .ps-countdown li span {
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.ps-product--detail .ps-countdown li p {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.ps-product--detail .ps-progress {
+    height: 10px;
+    background-color: #e1e1e1;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.ps-product--detail .ps-progress__value span {
+    background-color: var(--color-1st);
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* تحسين عرض الخيارات */
+.ps-product--detail .pr_switch_wrap {
+    margin-bottom: 20px;
+}
+
+.ps-product--detail .attribute-swatches-wrapper {
+    margin-bottom: 15px;
+}
+
+.ps-product--detail .attribute-swatches-wrapper .attribute-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--color-2nd);
+}
+
+.ps-product--detail .attribute-swatches-wrapper .attribute-values {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ps-product--detail .attribute-swatches-wrapper .attribute-swatch {
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.ps-product--detail .attribute-swatches-wrapper .attribute-swatch:hover,
+.ps-product--detail .attribute-swatches-wrapper .attribute-swatch.selected {
+    border-color: var(--color-1st);
+    background-color: var(--color-1st);
+    color: #fff;
+}
+
+/* تحسين عرض كمية المنتج */
+.ps-product--detail .form-group--number {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ps-product--detail .form-group--number button {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.ps-product--detail .form-group--number button:hover {
+    background-color: var(--color-1st);
+    color: #fff;
+}
+
+.ps-product--detail .form-group--number input {
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+/* تحسين أزرار الشراء */
+.ps-product--detail .ps-product__shopping {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.ps-product--detail .ps-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.ps-product--detail .ps-btn--outline {
+    border: 2px solid var(--color-1st);
+    color: var(--color-1st);
+    background-color: transparent;
+}
+
+.ps-product--detail .ps-btn--outline:hover {
+    background-color: var(--color-1st);
+    color: #fff;
+}
+
+.ps-product--detail .add-to-cart-button {
+    background-color: var(--color-1st);
+    color: #fff;
+    flex-grow: 1;
+}
+
+.ps-product--detail .add-to-cart-button:hover {
+    background-color: var(--color-2nd);
+}
+
+.ps-product--detail .ps-btn--favorite {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ps-product--detail .ps-btn--favorite i {
+    color: #666;
+    font-size: 18px;
+}
+
+.ps-product--detail .ps-btn--favorite:hover {
+    background-color: var(--color-1st);
+}
+
+.ps-product--detail .ps-btn--favorite:hover i {
+    color: #fff;
+}
+
+/* تحسين عرض المعلومات الإضافية */
+.ps-product--detail .ps-tab-list {
+    display: flex;
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 30px;
+}
+
+.ps-product--detail .ps-tab-list li {
+    margin-right: 30px;
+}
+
+.ps-product--detail .ps-tab-list li a {
+    display: block;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #666;
+    position: relative;
+}
+
+.ps-product--detail .ps-tab-list li a:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-1st);
+    transition: all 0.3s;
+}
+
+.ps-product--detail .ps-tab-list li a:hover,
+.ps-product--detail .ps-tab-list li.active a {
+    color: var(--color-1st);
+}
+
+.ps-product--detail .ps-tab-list li a:hover:after,
+.ps-product--detail .ps-tab-list li.active a:after {
+    width: 100%;
+}
+
+.ps-product--detail .ps-tab {
+    padding: 30px 0;
+}
+
+.ps-product--detail .ps-tab p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* تحسين عرض المنتجات ذات الصلة */
+.ps-section--default {
+    padding: 40px 0;
+}
+
+.ps-section--default .ps-section__header {
+    margin-bottom: 30px;
+}
+
+.ps-section--default .ps-section__header h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-2nd);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.ps-section--default .ps-section__header h3:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: var(--color-1st);
+}
+
+/* تحسين عرض التقييمات والمراجعات */
+.ps-product--detail .ps-block--average-rating {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.ps-product--detail .ps-block__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ps-product--detail .ps-block__star {
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--color-2nd);
+    margin-right: 20px;
+}
+
+.ps-product--detail .ps-block__content {
+    flex-grow: 1;
+}
+
+.ps-product--detail .ps-block__star-count {
+    margin-bottom: 15px;
+}
+
+.ps-product--detail .ps-block__progress {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.ps-product--detail .ps-block__progress span {
+    min-width: 60px;
+}
+
+.ps-product--detail .ps-block__progress .progress {
+    flex-grow: 1;
+    height: 10px;
+    background-color: #e1e1e1;
+    border-radius: 5px;
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.ps-product--detail .ps-block__progress .progress-bar {
+    background-color: #f39c12;
+    height: 100%;
+}
+
+/* تحسين نموذج إضافة مراجعة */
+.ps-product--detail .ps-form--review {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.ps-product--detail .ps-form--review h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-2nd);
+    margin-bottom: 20px;
+}
+
+.ps-product--detail .ps-form--review .form-group {
+    margin-bottom: 20px;
+}
+
+.ps-product--detail .ps-form--review label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.ps-product--detail .ps-form--review .form-control {
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+    padding: 10px 15px;
+}
+
+.ps-product--detail .ps-form--review textarea.form-control {
+    min-height: 120px;
+}
+
+.ps-product--detail .ps-form--review .ps-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: var(--color-1st);
+    color: #fff;
+}
+
+.ps-product--detail .ps-form--review .ps-btn:hover {
+    background-color: var(--color-2nd);
+}
+
+/* تحسين عرض المراجعات */
+.ps-product--detail .ps-review {
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.ps-product--detail .ps-review__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.ps-product--detail .ps-review__name {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-2nd);
+}
+
+.ps-product--detail .ps-review__date {
+    font-size: 14px;
+    color: #999;
+}
+
+.ps-product--detail .ps-review__rating {
+    margin-bottom: 10px;
+}
+
+.ps-product--detail .ps-review__content {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* تحسينات للغة العربية */
+[dir="rtl"] .ps-product--detail .ps-product__title {
+    font-family: 'Tajawal', sans-serif;
+}
+
+[dir="rtl"] .ps-product--detail .ps-product__desc {
+    font-family: 'Tajawal', sans-serif;
+}
+
+[dir="rtl"] .ps-product--detail .ps-tab p {
+    font-family: 'Tajawal', sans-serif;
+}
+
+[dir="rtl"] .ps-product--detail .ps-review__content {
+    font-family: 'Tajawal', sans-serif;
+}
